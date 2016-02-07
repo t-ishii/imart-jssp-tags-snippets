@@ -21,18 +21,42 @@
     'body': '<imart type="imuiButton" label="${1}" id="${2}" class="imui-medium-button" />'
   'imuiToggle':
     'prefix': 'imuiToggle'
-    'body': '<imart type="imuiToggle" label="${1}" value="${2}" class="imui-medium-button" />'
+    'body': '''
+      <imart
+        type="imuiToggle"
+        label="${1}"
+        value="${2}"
+        name="${3}"
+        class="imui-medium-button" />
+    '''
   # Calendar
   'imuiCalendar':
     'prefix': 'imuiCalendar'
-    'body': '<imart type="imuiCalendar" altField="${1}" />'
+    'body': '''
+      <imart
+        type="imuiCalendar"
+        altField="${1:#target-id}"
+        floatable="true" />
+    '''
   # Checkbox and Radio
   'imuiCheckbox':
     'prefix': 'imuiCheckbox'
-    'body': '<imart type="imuiCheckbox" label="${1}" />'
+    'body': '''
+      <imart
+        type="imuiCheckbox"
+        name="${1}"
+        label="${2}"
+        value="${3}" />
+    '''
   'imuiRadio':
     'prefix': 'imuiRadio'
-    'body': '<imart type="imuiRadio" name="${1}" label="${2}" />'
+    'body': '''
+      <imart
+        type="imuiRadio"
+        name="${1}"
+        label="${2}"
+        value="${3}" />
+    '''
   # ColumnView
   'imuiColumnView':
     'prefix': 'imuiColumnView'
@@ -81,7 +105,7 @@
   # Pager
   'imuiPager':
     'prefix': 'imuiPager'
-    'body': '<imart type="imuiPager" currentPage="3" total="5" />'
+    'body': '<imart type="imuiPager" currentPage="${1:3}" total="${2:5}" />'
   # Picture
   'imuiPicture':
     'prefix': 'imuiPicture'

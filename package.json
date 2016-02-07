@@ -6,7 +6,7 @@
     "snippets",
     "imart"
   ],
-  "repository": "https://github.com/atom/imart-jssp-tags-snippets",
+  "repository": "https://github.com/t-ishii/imart-jssp-tags-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

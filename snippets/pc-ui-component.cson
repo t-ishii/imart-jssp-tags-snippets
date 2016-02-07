@@ -1,0 +1,169 @@
+'.text.html':
+  # Accordion
+  'imuiAccordion':
+    'prefix': 'imuiAccordion'
+    'body': '''
+      <imart type="imuiAccordion" navigation="${1:true}">
+        // imuiAccordionItem: item 1
+        ${2}
+      </imart>
+    '''
+  'imuiAccordionItem':
+    'prefix': 'imuiAccordionItem'
+    'body': '''
+      <imart type="imuiAccordionItem" title="${1}" href="${2}">
+        ${3}
+      </imart>
+    '''
+  # Button
+  'imuiButton':
+    'prefix': 'imuiButton'
+    'body': '<imart type="imuiButton" label="${1}" id="${2}" class="imui-medium-button" />'
+  'imuiToggle':
+    'prefix': 'imuiToggle'
+    'body': '<imart type="imuiToggle" label="${1}" value="${2}" class="imui-medium-button" />'
+  # Calendar
+  'imuiCalendar':
+    'prefix': 'imuiCalendar'
+    'body': '<imart type="imuiCalendar" altField="${1}" />'
+  # Checkbox and Radio
+  'imuiCheckbox':
+    'prefix': 'imuiCheckbox'
+    'body': '<imart type="imuiCheckbox" label="${1}" />'
+  'imuiRadio':
+    'prefix': 'imuiRadio'
+    'body': '<imart type="imuiRadio" name="${1}" label="${2}" />'
+  # ColumnView
+  'imuiColumnView':
+    'prefix': 'imuiColumnView'
+    'body': '<imart type="imuiColumnView" rootLoader="${1}" childrenLoader="${2}" />'
+  # Dialog
+  'imuiDialog':
+    'prefix': 'imuiDialog'
+    'body': '<imart type="imuiDialog" buttons=${1} toolbarLeft=${2} onClose="${3}" />'
+  # Dropdown
+  'imuiDropdown':
+    'prefix': 'imuiDropdown'
+    'body': '<imart type="imuiDropdown" data=${1} />'
+  # FileUpload
+  'imuiFileUpload':
+    'prefix': 'imuiFileUpload'
+    'body': '<imart type="imuiFileUpload" url="${1}" id="${2}" acceptFileTypes="${3}" />'
+  # Gadget
+  'imuiGadgetBar':
+    'prefix': 'imuiGadgetBar'
+    'body': '''
+      <imart type="imuiGadgetBar">
+        // imuiGadgetItem: item 1
+        ${1}
+      </imart>
+    '''
+  'imuiGadgetItem':
+    'prefix': 'imuiGadgetItem'
+    'body': '<imart type="imuiGadgetItem" title="${1}" href="${2}">${3}</imart>'
+  # Header
+  'head':
+    'prefix': 'head'
+    'body': '''
+      <imart type="head">
+        ${1}
+      </imart>
+    '''
+  'imuiSessionKeeper':
+    'prefix': 'imuiSessionKeeper'
+    'body': '<imart type="imuiSessionKeeper" autoKeep="${1:true}" />'
+  'imuiLink':
+    'prefix': 'imuiLink'
+    'body': '<imart type="imuiLink" href="${1}" />'
+  'imuiScript':
+    'prefix': 'imuiScript'
+    'body': '<imart type="imuiScript" src="${1}" />'
+  # Pager
+  'imuiPager':
+    'prefix': 'imuiPager'
+    'body': '<imart type="imuiPager" currentPage="3" total="5" />'
+  # Picture
+  'imuiPicture':
+    'prefix': 'imuiPicture'
+    'body': '<imart type="imuiPicture" src="${1}" title="${2}" />'
+  # Select and Combo
+  'imuiCombobox':
+    'prefix': 'imuiCombobox'
+    'body': '<imart type="imuiCombobox" id="${1}" name="${2}" list=${3} />'
+  'imuiMultiDragbox':
+    'prefix': 'imuiMultiDragbox'
+    'body': '<imart type="imuiMultiDragbox" values=${1} />'
+  'imuiSelect':
+    'prefix': 'imuiSelect'
+    'body': '<imart type="imuiSelect" id="${1}" name="${2}" list=${3} />'
+  # Tab
+  'imuiTabs':
+    'prefix': 'imuiTabs'
+    'body': '''
+      <imart type="imuiTabs">
+        // imuiTabItem: tab 1
+        ${1}
+      </imart>
+    '''
+  'imuiTabItem':
+    'prefix': 'imuiTabItem'
+    'body': '''
+      <imart type="imuiTabItem" title="${1}" href="${2}">
+      </imart>
+    '''
+  # ListTable
+  'imuiListTable':
+    'prefix': 'imuiListTable'
+    'body': '''
+      <imart
+        type="imuiListTable"
+        process="jssp"
+        target="${1}"
+        viewRecords="${2:true}">
+        <pager rowNum="${3}" />
+        <cols>
+          <cols name="${4}" caption="${5}" />
+        </cols>
+      </imart>
+    '''
+  # Textbox and TextArea
+  'imuiAutocomplete':
+    'prefix': 'imuiAutocomplete'
+    'body': '<imart type="imuiAutocomplete" name="${1}" id="${2}" data=${3} />'
+  'imuiPassword':
+    'prefix': 'imuiPassword'
+    'body': '<imart type="imuiPassword" name="${1}" id="${2}" />'
+  'imuiRichtextbox':
+    'prefix': 'imuiRichtextbox'
+    'body': '''
+      <imart
+        type="imuiRichtextbox"
+        name="${1}"
+        id="${2}"
+        value="${3}"
+        decoration="simple" />
+    '''
+  'imuiTextArea':
+    'prefix': 'imuiTextArea'
+    'body': '<imart type="imuiTextArea" name="${1}" id="${2}" value="${3}" />'
+  'imuiTextbox':
+    'prefix': 'imuiTextbox'
+    'body': '<imart type="imuiTextbox" name="${1}" id="${2}" value="${3}" />'
+  # Tree
+  'imuiTree':
+    'prefix': 'imuiTree'
+    'body': '<imart type="imuiTree" parameter=${1} value=${2} />'
+  'imuiTreeNode':
+    'prefix': 'imuiTreeNode'
+    'body': '<imart type="imuiTreeNode" value=${1} />'
+  # Validation
+  'imuiValidationRule':
+    'prefix': 'imuiValidationRule'
+    'body': '<imart type="imuiValidationRule" messagesName="${1}" rule="${2}" rulesName="${3}" />'
+  # Video
+  'imuiVideo':
+    'prefix': 'imuiVideo'
+    'body': '<imart type="imuiVideo" src="${1}" />'
+  'imuiVideoItem':
+    'prefix': 'imuiVideoItem'
+    'body': '<imart type="imuiVideoItem" src="${1}" contentType="${2:video/mp4}" />'

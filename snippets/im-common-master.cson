@@ -1,0 +1,15 @@
+'.text.html':
+  # Display
+  'imACMCommons':
+    'prefix': 'imACMCommons'
+    'body': '<imart type="imACMCommons" />'
+  # Request
+  'imACMSearch':
+    'prefix': 'imACMSearch'
+    'body': '<imart type="imACMSearch" />'
+  'imACMSearchDialog':
+    'prefix': 'imACMSearchDialog'
+    'body': '<imart type="imACMSearchDialog" />'
+  'imACMUser':
+    'prefix': 'imACMUser'
+    'body': '<imart type="imACMUser" />'

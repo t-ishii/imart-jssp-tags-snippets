@@ -2,61 +2,28 @@
   # Accordion
   'imuiAccordion':
     'prefix': 'imuiAccordion'
-    'body': '''
-      <imart type="imuiAccordion" navigation="${1:true}">
-        // imuiAccordionItem: item 1
-        ${2}
-      </imart>
-    '''
+    'body': '<imart type="imuiAccordion" navigation="${1:true}">\n\t// imuiAccordionItem: item 1\n\t${2}\n</imart>'
   'imuiAccordionItem':
     'prefix': 'imuiAccordionItem'
-    'body': '''
-      <imart type="imuiAccordionItem" title="${1}" href="${2}">
-        ${3}
-      </imart>
-    '''
+    'body': '<imart type="imuiAccordionItem" title="${1}" href="${2}">\n\t${3}\n</imart>'
   # Button
   'imuiButton':
     'prefix': 'imuiButton'
     'body': '<imart type="imuiButton" label="${1}" id="${2}" class="imui-medium-button" />'
   'imuiToggle':
     'prefix': 'imuiToggle'
-    'body': '''
-      <imart
-        type="imuiToggle"
-        label="${1}"
-        value="${2}"
-        name="${3}"
-        class="imui-medium-button" />
-    '''
+    'body': '<imart\n\ttype="imuiToggle"\n\tlabel="${1}"\n\tvalue="${2}"\n\tname="${3}"\n\tclass="imui-medium-button" />'
   # Calendar
   'imuiCalendar':
     'prefix': 'imuiCalendar'
-    'body': '''
-      <imart
-        type="imuiCalendar"
-        altField="${1:#target-id}"
-        floatable="true" />
-    '''
+    'body': '<imart\n\ttype="imuiCalendar"\n\taltField="${1:#target-id}"\n\tfloatable="true" />'
   # Checkbox and Radio
   'imuiCheckbox':
     'prefix': 'imuiCheckbox'
-    'body': '''
-      <imart
-        type="imuiCheckbox"
-        name="${1}"
-        label="${2}"
-        value="${3}" />
-    '''
+    'body': '<imart\n\ttype="imuiCheckbox"\n\tname="${1}"\n\tlabel="${2}"\n\tvalue="${3}" />'
   'imuiRadio':
     'prefix': 'imuiRadio'
-    'body': '''
-      <imart
-        type="imuiRadio"
-        name="${1}"
-        label="${2}"
-        value="${3}" />
-    '''
+    'body': '<imart\n\ttype="imuiRadio"\n\tname="${1}"\n\tlabel="${2}"\n\tvalue="${3}" />'
   # ColumnView
   'imuiColumnView':
     'prefix': 'imuiColumnView'
@@ -76,23 +43,14 @@
   # Gadget
   'imuiGadgetBar':
     'prefix': 'imuiGadgetBar'
-    'body': '''
-      <imart type="imuiGadgetBar">
-        // imuiGadgetItem: item 1
-        ${1}
-      </imart>
-    '''
+    'body': '<imart type="imuiGadgetBar">\n\t// imuiGadgetItem: item 1\n\t${1}\n</imart>'
   'imuiGadgetItem':
     'prefix': 'imuiGadgetItem'
     'body': '<imart type="imuiGadgetItem" title="${1}" href="${2}">${3}</imart>'
   # Header
   'head':
     'prefix': 'head'
-    'body': '''
-      <imart type="head">
-        ${1}
-      </imart>
-    '''
+    'body': '<imart type="head">\n\t${1}\n</imart>'
   'imuiSessionKeeper':
     'prefix': 'imuiSessionKeeper'
     'body': '<imart type="imuiSessionKeeper" autoKeep="${1:true}" />'
@@ -123,33 +81,14 @@
   # Tab
   'imuiTabs':
     'prefix': 'imuiTabs'
-    'body': '''
-      <imart type="imuiTabs">
-        // imuiTabItem: tab 1
-        ${1}
-      </imart>
-    '''
+    'body': '<imart type="imuiTabs">\n\t// imuiTabItem: tab 1\n\t${1}\n</imart>'
   'imuiTabItem':
     'prefix': 'imuiTabItem'
-    'body': '''
-      <imart type="imuiTabItem" title="${1}" href="${2}">
-      </imart>
-    '''
+    'body': '<imart type="imuiTabItem" title="${1}" href="${2}">\n</imart>'
   # ListTable
   'imuiListTable':
     'prefix': 'imuiListTable'
-    'body': '''
-      <imart
-        type="imuiListTable"
-        process="jssp"
-        target="${1}"
-        viewRecords="${2:true}">
-        <pager rowNum="${3}" />
-        <cols>
-          <cols name="${4}" caption="${5}" />
-        </cols>
-      </imart>
-    '''
+    'body': '<imart\n\ttype="imuiListTable"\n\tprocess="jssp"\n\ttarget="${1}"\n\tviewRecords="${2:true}">\n\t<pager rowNum="${3}" />\n\t<cols>\n\t\t<col name="${4}" caption="${5}" />\n\t</cols>\n</imart>'
   # Textbox and TextArea
   'imuiAutocomplete':
     'prefix': 'imuiAutocomplete'
@@ -159,14 +98,7 @@
     'body': '<imart type="imuiPassword" name="${1}" id="${2}" />'
   'imuiRichtextbox':
     'prefix': 'imuiRichtextbox'
-    'body': '''
-      <imart
-        type="imuiRichtextbox"
-        name="${1}"
-        id="${2}"
-        value="${3}"
-        decoration="simple" />
-    '''
+    'body': '<imart\n\ttype="imuiRichtextbox"\n\tname="${1}"\n\tid="${2}"\n\tvalue="${3}"\n\tdecoration="simple" />'
   'imuiTextArea':
     'prefix': 'imuiTextArea'
     'body': '<imart type="imuiTextArea" name="${1}" id="${2}" value="${3}" />'
